@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Source+Serif+Pro&display=swap');
+
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background: url(../images/Holkham_Hall.jpg);
+    background: url(../images/Holkham_Hall_72ppi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fafafa;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 article {
@@ -18,27 +22,27 @@ article {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 42px;
     padding: 50px 0 30px;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 30px;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Open Sans Light', 'Nunito Sans ExtraLight', 'Manjari Thin', 'Laksaman', 'Nunito Sans', 'Open Sans', Calibri, Arial, Helvetica, sans-serif;
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 p {
-    font-family: 'Segoe UI', 'Open Sans';
-    font-size: 18px;
-    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    line-height: 35px;
 }
 
 figure {
@@ -48,13 +52,12 @@ figure {
 figure img {
     width: 100%;
     opacity: 0.8;
-}
-
-figure figcaption {
-    padding-top: 7px;
+    float: left;
+    margin-bottom: 10px;
 }
 
 li {
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -82,7 +85,7 @@ table {
 }
 
 caption {
-    font-size: 21px;
+    font-size: 22px;
     margin-top: 10px;
     text-align: left;
     text-transform: uppercase;
@@ -95,6 +98,8 @@ th {
     border: 1px solid #a86d9359;
     padding: 10px 30px 10px 10px;
     text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.06em;
 }
 
 .price:before {
@@ -124,16 +129,16 @@ form textarea {
     border-radius: 2px;
     background: #fafafabc;
     margin-left: 15px;
-    padding: 2px 5px;
+    padding: 2px 25px 2px 7px;
     font-size: 18px;
 }
 
 .user input {
+    font-family: 'Source Serif Pro', serif;
     float: right;
     width: 50%;
     height: 40px;
     margin-right: 20%;
-    font-family: 'Tahoma', 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 .check {
@@ -149,6 +154,7 @@ form textarea {
 form fieldset {
     width: 85%;
     border-color: #e4e4e45d;
+    border-color: #a86d9359;
     border-width: 1px;
     border-radius: 2px;
 }
@@ -193,6 +199,16 @@ form input[type="submit"]:hover {
 
 footer {
     text-align: center;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background: url(../images/Holkham_Hall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 
 @media only screen and (max-width: 768px) {
