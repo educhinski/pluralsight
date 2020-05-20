@@ -1,0 +1,297 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url(../images/Holkham_Hall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fafafa;
+}
+
+article {
+    background: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    min-height: 850px;
+    margin: 0;
+    padding: 0 60px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 50px 0 30px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Open Sans Light', 'Nunito Sans ExtraLight', 'Manjari Thin', 'Laksaman', 'Nunito Sans', 'Open Sans', Calibri, Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Segoe UI', 'Open Sans';
+    font-size: 18px;
+    line-height: 30px;
+}
+
+figure {
+    margin: 30px 0;
+}
+
+figure img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+figure figcaption {
+    padding-top: 7px;
+}
+
+li {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+a:link {
+    color: rgb(168, 109, 147);
+}
+
+a:visited {
+    color: rgb(235, 88, 179);
+}
+
+a:hover {
+    color: rgb(244, 158, 215);
+}
+
+a:active {
+    color: rgb(246, 19, 171);
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+caption {
+    font-size: 21px;
+    margin-top: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+td,
+th {
+    border: 1px solid #a86d9359;
+    padding: 10px 30px 10px 10px;
+    text-align: left;
+}
+
+.price:before {
+    content: "£";
+}
+
+form {
+    font-family: 14px;
+}
+
+form ul {
+    padding-left: 0;
+}
+
+form ul li {
+    list-style-type: none;
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+
+form input,
+form textarea {
+    line-height: 2em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    border: none;
+    border-radius: 2px;
+    background: #fafafabc;
+    margin-left: 15px;
+    padding: 2px 5px;
+    font-size: 18px;
+}
+
+.user input {
+    float: right;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    font-family: 'Tahoma', 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.check {
+    float: right;
+    width: 40%;
+    margin-right: 30%;
+}
+
+#comm {
+    margin-top: 40px;
+}
+
+form fieldset {
+    width: 85%;
+    border-color: #e4e4e45d;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+fieldset li {
+    display: inline;
+    padding-right: 20px;
+    margin: 0;
+}
+
+form textarea {
+    width: 80%;
+    margin-left: 5%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    margin-left: 5%;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: rgb(168, 109, 147);
+    color: #000000;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(117, 41, 90);
+    color: #f3f3f3;
+}
+
+#announ:before {
+    content: "* ";
+    color: #ff00dd;
+}
+
+#announ {
+    font-style: oblique;
+    line-height: 1em;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    fieldset li {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+
+    article {
+        margin: 0;
+        padding: 0 5%;
+    }
+
+    h1,
+    h2 {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    form li {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    caption {
+        text-align: center;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    td {
+        height: 30px;
+    }
+
+    .user input {
+        margin-right: 5%;
+        width: 80%;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .user label {
+        float: left;
+        min-width: 150px;
+    }
+
+    .check {
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    .check label {
+        float: left;
+        min-width: 50%;
+    }
+
+    label,
+    fieldset,
+    #comments {
+        margin-left: 5%;
+    }
+
+    #comments {
+        width: 85%;
+        height: 150px;
+    }
+
+    fieldset {
+        margin-right: 10%;
+    }
+
+    fieldset li {
+        display: block;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    article {
+        padding: 0 3%;
+    }
+
+    ol,
+    ul {
+        padding-left: 30px;
+    }
+}
