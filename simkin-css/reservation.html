@@ -2,115 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Abbey Hotel | Reservation</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Red Abbey Hotel | Reservation</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <article>
-        <h1>Red Abbey Resort</h1>
-        <h2>Reserving a room</h2>
+	<article>
+		<h1>Red Abbey Resort</h1>
+		<h2>Reserving a room</h2>
 
-        <main>
+		<main>
 
-            <table>
-                <caption>Our Guest Rooms</caption>
-                <tr>
-                    <th>Room Type</th>
-                    <th>Maximum Occupancy</th>
-                    <th>Average Price Per Night</th>
-                </tr>
-                <tr>
-                    <td>Attic Room</td>
-                    <td>1</td>
-                    <td class="price">100</td>
-                </tr>
-                <tr>
-                    <td>Standard Room</td>
-                    <td>2</td>
-                    <td class="price">170</td>
-                </tr>
-                <tr>
-                    <td>Garden View Suite</td>
-                    <td>4</td>
-                    <td class="price">220</td>
-                </tr>
-            </table>
+			<table>
+				<caption>Our Guest Rooms</caption>
+				<tr>
+					<th>Room Type</th>
+					<th>Maximum Occupancy</th>
+					<th>Average Price Per Night</th>
+				</tr>
+				<tr>
+					<td>Attic Room</td>
+					<td>1</td>
+					<td class="price">100</td>
+				</tr>
+				<tr>
+					<td>Standard Room</td>
+					<td>2</td>
+					<td class="price">170</td>
+				</tr>
+				<tr>
+					<td>Garden View Suite</td>
+					<td>4</td>
+					<td class="price">220</td>
+				</tr>
+			</table>
 
-            <form action="">
-                <ul>
+			<form action="">
+				<ul>
 
-                    <li class="user">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname">
-                    </li>
+					<li class="user">
+						<label for="fname">First Name</label>
+						<input type="text" name="fname" id="fname" placeholder="First Name" required>
+					</li>
 
-                    <li class="user">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname">
-                    </li>
+					<li class="user">
+						<label for="lname">Last Name</label>
+						<input type="text" name="lname" id="lname" placeholder="Last Name" required>
+					</li>
 
-                    <li class="user">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
-                    </li>
+					<li class="user">
+						<label for="phone">Phone Number</label>
+						<input type="tel" name="phone" id="phone" placeholder="Telephone Number" required>
+					</li>
 
-                    <li class="user">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </li>
+					<li class="user">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" placeholder="Email address" required>
+					</li>
 
-                    <li>
-                        <fieldset>
-                            <legend>Preferred Room Type</legend>
-                    <li>
-                        <input type="radio" name="attic" id="attic">
-                        <label for="attic">Attic Room</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="standard" id="standard">
-                        <label for="standard">Standard Room</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="garden-view" id="garden-view">
-                        <label for="garden-view">Garden View Suite</label>
-                    </li>
-                    </fieldset>
-                    </li>
+					<li>
+						<fieldset>
+							<legend>Preferred Room Type</legend>
+					<li>
+						<input type="radio" name="room-type" id="attic">
+						<label for="attic">Attic Room</label>
+					</li>
+					<li>
+						<input type="radio" name="room-type" id="standard">
+						<label for="standard">Standard Room</label>
+					</li>
+					<li>
+						<input type="radio" name="room-type" id="garden-view">
+						<label for="garden-view">Garden View Suite</label>
+					</li>
+					</fieldset>
+					</li>
 
-                    <li>
-                        <label for="check-in">Check In:</label>
-                        <input type="date" name="check-in" id="check-in" class="check">
-                    </li>
+					<li>
+						<label for="check-in">Check In:</label>
+						<input type="date" name="check-in" id="check-in" class="check">
+					</li>
 
-                    <li>
-                        <label for="check-out">Check Out:</label>
-                        <input type="date" name="check-out" id="check-out" class="check">
-                    </li>
+					<li>
+						<label for="check-out">Check Out:</label>
+						<input type="date" name="check-out" id="check-out" class="check">
+					</li>
 
-                    <li id="comm">
-                        <label for="comments">Comments or special requests</label>
-                    </li>
+					<li id="comm">
+						<label for="comments">Comments or special requests</label>
+					</li>
 
-                    <li>
-                        <textarea name="comments" id="comments"></textarea>
-                    </li>
+					<li>
+						<textarea name="comments" id="comments"></textarea>
+					</li>
 
-                    <li>
-                        <input type="submit" value="Submit" id="submit">
-            </form>
-            <p id="announ"><small><strong>Reservations must be made <em>at least</em> 30 days in
-                        advance.</strong></small></p>
-            <p><a href="index.html">Return to Home Page</a></p>
+					<li>
+						<input type="submit" value="Submit" id="submit">
+			</form>
+			<p id="announ"><small><strong>Reservations must be made <em>at least</em> 30 days in
+						advance.</strong></small></p>
+			<p><a href="index.html">Return to Home Page</a></p>
 
-            <footer>
-                <p>All content on this site is &copy;Red Abbey Resort </p>
-            </footer>
-        </main>
+			<footer>
+				<p>All content on this site is &copy;Red Abbey Resort </p>
+			</footer>
+		</main>
 
-    </article>
+	</article>
 
 </body>
 

@@ -41,7 +41,7 @@ h3 {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    opacity: 0.85;
+    opacity: 0.90;
     font-size: 19px;
     line-height: 35px;
 }
@@ -57,6 +57,10 @@ figure img {
     margin-bottom: 10px;
 }
 
+figcaption {
+    color: rgb(244, 158, 215);
+}
+
 li {
     font-family: 'Open Sans', sans-serif;
     opacity: 0.95;
@@ -67,6 +71,7 @@ li {
 
 a:link {
     color: rgb(168, 109, 147);
+    text-decoration: none;
 }
 
 a:visited {
@@ -75,6 +80,7 @@ a:visited {
 
 a:hover {
     color: rgb(244, 158, 215);
+    text-decoration: underline;
 }
 
 a:active {
@@ -85,6 +91,7 @@ table {
     border-collapse: collapse;
     width: 90%;
     opacity: 0.95;
+    margin: 10px 0 50px;
 }
 
 caption {
@@ -128,11 +135,25 @@ form textarea {
     line-height: 2em;
     letter-spacing: 1px;
     word-spacing: 2px;
-    border: none;
-    border-radius: 2px;
+    border: 2px solid transparent;
+    border-radius: 3px;
     background: #fafafabc;
     margin-left: 15px;
     font-size: 18px;
+    outline: none;
+}
+
+form input:hover,
+form input:focus,
+form input:active,
+form textarea:hover,
+form textarea:focus,
+form textarea:active {
+    border-color: #ff00dd;
+}
+
+form input::placeholder {
+    color: #757575;
 }
 
 .user input {
@@ -157,7 +178,6 @@ form textarea {
 
 form fieldset {
     width: 85%;
-    border-color: #e4e4e45d;
     border-color: #a86d9359;
     border-width: 1px;
     border-radius: 2px;
@@ -184,6 +204,7 @@ form input[type="submit"] {
     font-size: 16px;
     background: rgb(168, 109, 147);
     color: #000000;
+    border: none;
 }
 
 form input[type="submit"]:hover {
