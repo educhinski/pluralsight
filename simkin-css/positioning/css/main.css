@@ -1,0 +1,114 @@
+body {
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+    font-family: "Lato", sans-serif;
+    height: 2000px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #e07a05;
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    font-family: "Leelawadee", sans-serif;
+    clear: both;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blueBox {
+    background: #627da0;
+}
+
+.greenBox {
+    background: #5b8054;
+}
+
+.blueBox.fix {
+    position: fixed;
+    top: 150px;
+    left: 150px;
+}
+
+.blueBox.abs {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.container-abs {
+    background: rgba(0, 0, 0, .4);
+    height: 200px;
+    width: 200px;
+    margin-top: 200px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.blueBox.rel {
+    position: relative;
+}
+
+.container-rel {
+    background: rgba(0, 0, 0, .4);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 200px;
+}
+
+.blueBox.st {
+    position: relative;
+}
+
+.greenBox.st {
+    position: relative;
+    top: -150px;
+    z-index: -1;
+}
+
+.container-st {
+    background: rgba(0, 0, 0, .5);
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.blueBox.flt {
+    float: left;
+}
+
+.flt-m {
+    margin-right: 10px;
+}
+
+.blueBox.flt-m {
+    float: left;
+}
+
+.greenBox.flt-m {
+    float: left; 
+}
+
+.blueBox.ctr {
+   margin: 0 auto;
+}
+
+.container-ctr {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 0;
+    width: 100%;
+}
