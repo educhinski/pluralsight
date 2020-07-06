@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 1em/1.5 'Lato', sans-serif;
+}
+
+.main {
+    background: #f3f3f3;
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.btn {
+    margin: 10px 20px;
+    padding: 10px 15px;
+    border: 1px solid #adadad;
+    color: #555555;
+    letter-spacing: 1px;
+    font: 600 0.85em/2 'Lato', sans-serif;
+}
+
+.btn:focus,
+.btn:active {
+    outline-width: 0;
+}
+
+.btn:hover {
+    background: #aaaaaa;
+    cursor: pointer;
+    color: #fff;
+}

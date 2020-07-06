@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# 2020-07-05 v1.0.0
+/css/style.css
+/js/index.js
+
+NETWORK:
+
+FALLBACK:
+/html/ /offline.html

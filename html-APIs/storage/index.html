@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description"
+    content="Example page of using Local Storage, a HTML5 API.">
+  <title>HTML5 APIs | Local Storage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <h1>Local Storage</h1>
+    <section class="storage">
+      <h2>Example of Local Storage</h2>
+
+      <!-- storage -->
+      <div class="storage">
+        <h3>Storage</h3>
+        <div id="result"></div>
+      </div>
+
+      <!-- counter -->
+      <div class="counter">
+        <h3>Counter</h3>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result-counter"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter
+          will continue to count (is not reset).</p>
+      </div>
+
+      <!-- session -->
+      <div class="session">
+        <h3>Session Storage</h3>
+        <p><button onclick="clickCounterSession()" type="button">Click
+            me!</button></p>
+        <div id="result-session"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter is
+          reset.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
