@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 20px;
+  line-height: 1.4;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: papayawhip;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+}
+
+code,
+output {
+  color: firebrick;
+  font-family: Monaco, Consolas, monospace;
+}
+
+section:nth-of-type(2) code,
+section:nth-of-type(2) output {
+  word-wrap: break-word;
+}
+
+.box {
+  border: solid 1px #cccccc;
+  padding: 10px;
+}
+
+.box::before {
+  content: 'Example';
+  display: block;
+  width: 50px;
+}
+
+.box1 {
+  border: solid 1px #cccccc;
+  padding: 0 10px;
+}
+
+.box1 p::first-line {
+  color: #ff69b4;
+}
+
+.box3 {
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+  color: #444444;
+}
+
+input {
+  background: inherit;
+}
+
+input::placeholder {
+  color: #cccccc;
+  font-style: italic;
+}

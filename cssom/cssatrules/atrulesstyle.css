@@ -1,0 +1,142 @@
+/* At-Rule of CSS */
+/* provides CSS with instructions to perform or how to behave */
+
+/* REGULAR RULES */
+/* @[keyword] (RULE); */
+
+
+/* @charset  */
+/* defines character set used by the browser */
+/* overridden by any character set in HTTP header */
+@charset "utf-8";
+
+
+/* @import */
+/* placed at top of filename but after @charset */
+/* instructs stylesheet to to request and include an external stylesheet */
+/* CSS preprocessors that suppoert work differently than native CSS, 
+ * @import is a separate HTTP request for that file 
+**/
+@import "global.css";
+
+
+/* @namespace */
+/* used for applying CSS to XML HTML(XHTML) 
+ * for XHTML to be used as selectors in css */
+
+/* namspace for XHTML */
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* namespace for SVG embedded in XHTML */
+@namespace svg url(http://www.w3.org/200/svg);
+
+/* NESTED RULES */
+/* contains a subset of additional statements
+ * which might be conditional to a specific situation 
+**/
+
+/* @[KEYWORD] {
+    /* nested statements *\/
+    } 
+*
+
+
+/* @document */
+/* specifies conditions for styles that apply to a specific page */
+/* eg. provide a URL to customize styles for that particular page
+ * they will be ignored by other pages
+**/
+
+/* !!! support only by moz */
+@document
+  /* Rules for a specific page */
+  url(https://my-tricks.com/),
+
+  /* Rules for pages with a url that begin with... */
+  url-prefix(https: //my-tricks.com/snippets/),
+
+  /* Rules for any page hosted on a domain */
+  domain(my-tricks.com)
+
+  /* Rules for all secure pages */
+  regexp("https:.*") {
+
+    /* start styling */
+    body {
+      font-family: 'Comic Sans';
+    }
+}
+
+
+/* @font-face */
+/* allows us to load custom fonts on a webpage */
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff2') format('woff2'),
+       url('myfont.woff') format('woff');
+}
+
+
+/* @keyframes */
+/* basis for keyframe animations on css properties,
+ * allowing us to mark the start and stop(and in-between) marks for what is being animated 
+**/
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  100% {
+    background-color: #ff4136;
+  }
+}
+
+/* @media */
+/* contains conditional statements for targetting specific screens  */
+/* con contain screen sizes, which can be useful for adapting styles to devices */
+
+/* iPhone in portrait and landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .module {
+      width: 100%;
+    }
+}
+
+/* or applying styles to the document when it is printed */
+@media print {
+
+}
+
+
+/* @page */
+/* defines styles that are individual pages when printing the document */
+/* contains pseudo-elements for styling the :first page 
+ * as well as :left and :right margins of the page 
+**/
+@page :first {
+  margin: 1in;
+}
+
+
+/* @supports */
+/* tests whether a browser supports a feature, 
+ * then applies styles for those elements if the condition is met; 
+ * sort of like Modernizr but tailored specially for CSS propeerties
+**/
+
+/* check one supported condition */
+@supports (display: flex) {
+  .module {
+    display: flex;
+  }
+}
+
+/* check multiple conditions */
+/* no support in ios and safari */
+@supports (display: flex) and (-webkit-appearance: checkbox) {
+  .module {
+    display: flex;
+  }
+}

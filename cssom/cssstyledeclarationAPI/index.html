@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Example of using CSSStyleDeclaration API">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>CSS Style Declaration API | CSSOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <h1>CSSStyleDeclaration API</h1>
+    <section>
+      <h2><code>CSSStyleDeclaration</code> API</h2>
+
+      <div class="box">
+        <p>Some example text.</p>
+      </div>
+
+      <p>Color for box is: <output></output></p>
+
+      <p>The following properties are defined on the box's inline styles:
+        <output></output></p>
+
+      <p>Using <code>setProperty()</code>, <code>getPropertyValue()</code>, and
+        <code>item()</code> — all methods of the <code>style</code> object — you
+        can get or set inline styles on elements.</p>
+    </section>
+    <section>
+      <h2>Using the <code>removeProperty()</code> method of the
+        <code>CSSStyleDeclaration</code> API</h2>
+
+      <div class="box">
+        <p>Some example text.</p>
+      </div>
+
+      <p>The property added to the box's inline styles via JavaScript is:
+        <output></output></p>
+
+      <p>Click the button below to remove the property. This uses the
+        <code>removeProperty()</code> method of the
+        <code>CSSStyleDeclaration</code> API.</p>
+
+      <p><button>Remove font-size from box</button></p>
+    </section>
+    <section>
+      <h2>Using <code>getPropertyPriority()</code> to get a property's
+        "importance"</h2>
+
+      <div class="box">
+        <p>Some example text.</p>
+      </div>
+
+      <p>The priority for the first property is: <output></output></p>
+
+      <p>The priority for the second property is: <output></output></p>
+
+      <p>If you inspect this page, you'll see that the inline styles on the
+        targeted element look like this:</p>
+
+      <pre><code>&lt;div class="box" style="font-family: Georgia, serif !important; font-size: 1.5em;"&gt;</code></pre>
+    </section>
+    <section>
+      <h2>Using <code>getPropertyPriority()</code> to check the priority of
+        longhand properties</h2>
+
+      <div class="box" style="border: solid 1px red !important;">
+        <p>Some example text.</p>
+      </div>
+
+      <p>The priority for five of the <code>border</code> longhand properties
+        is:<br><output></output></p>
+
+      <p>The box has a single inline style, the <code>border</code> property,
+        which is shorthand, set to a priority of "important". When accessing any
+        of the longhand properties that make up <code>border</code>, those will
+        also return a value of "important".</p>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

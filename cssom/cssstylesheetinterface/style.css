@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1.4;
+  background: papayawhip;
+}
+
+main {
+  width: 1024px;
+  margin: 0 auto !important;
+}
+
+.component {
+  float: right;
+  border-left: solid 1px #444;
+  margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+  body {
+    line-height: 1.2;
+  }
+
+  .component {
+    float: none;
+    margin: 0;
+  }
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+@keyframes exampleAnimation {
+  from {
+    color: blue;
+  }
+
+  20% {
+    color: orange;
+  }
+
+  to {
+    color: green;
+  }
+}
+
+code {
+  color: firebrick;
+}

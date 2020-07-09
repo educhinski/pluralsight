@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 20px;
+  line-height: 1.4;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: papayawhip;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+code,
+output {
+  color: firebrick;
+}
+
+.box {
+  border: 1px solid #cccccc;
+  border: 0 10px;
+}
+
+pre {
+  white-space: normal;
+  font-size: .8em;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Examples showing the usage of CSSOM APIs.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>CSSOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <h2>Using the <code>style</code> property to change the background color
+    </h2>
+
+    <p>Select a color for this page's background:</p>
+
+    <input type="radio" name="colors" value="transparent" id="transparent"
+      checked> <label for="transparent">Transparent</label><br />
+
+    <input type="radio" name="colors" value="BlanchedAlmond"
+      id="BlanchedAlmond"> <label for="BlanchedAlmond">BlanchedAlmond</label><br />
+
+    <input type="radio" name="colors" value="CadetBlue" id="CadetBlue">
+    <label for="CadetBlue"> CadetBlue</label><br />
+
+    <input type="radio" name="colors" value="LavenderBlush" id="LavenderBlush">
+    <label for="LavenderBlush"> LavenderBlush</label><br />
+
+    <input type="radio" name="colors" value="LemonChiffon" id="LemonChiffon">
+    <label for="LemonChiffon"> LemonChiffon</label><br />
+
+    <p>The Rendered HTML looks like this:<br /><code>&lt;body
+        style="background-color: <output></output>"&gt;
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

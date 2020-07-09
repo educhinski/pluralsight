@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Examples showing usage of getting computed styles of pseudo-elements.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Getting Computed Styles - Pseudo Elements | CSSOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <h1>Getting Computed Styles of Pseudo Elements</h1>
+
+    <section>
+      <h2>Using <code>getComputedStyle()</code> to get styles from a
+        pseudo-element</code></h2>
+
+      <div class="box">The text above is inserted via a pseudo-element.</div>
+
+      <p>The width of the pseudo-element is: <output></output></p>
+
+      <p>Using <code>getComputedStyle()</code>, you can get styles from a
+        pseudo-element in the same way as other elements.</p>
+    </section>
+
+    <section>
+      <h2>Using <code>getComputedStyle()</code> to get styles from a
+        pseudo-element</code></h2>
+
+      <div class="box1">
+        <p>Call me Ishmael. Some years ago—never mind how long precisely—having
+          little or no money in my purse, and nothing particular to interest me
+          on shore, I thought I would sail about a little and see the watery
+          part of the world. It is a way I have of driving off the spleen and
+          regulating the circulation.</p>
+      </div>
+
+      <p>The color of the <code>::first-line</code> pseudo-element is:
+        <output></output></p>
+
+      <p>Using <code>getComputedStyle()</code>, you can get styles from a
+        pseudo-element in the same way as other elements, including
+        <code>::first-line</code>, as demonstrated above.</p>
+    </section>
+
+    <section>
+      <h2>Using <code>getComputedStyle()</code> to get styles from a
+        <code>::placeholder</code> pseudo-element</code></h2>
+
+      <input type="email" placeholder="email">
+
+      <p>The color of the <code>::placeholder</code> pseudo-element is:
+        <output></output></p>
+
+      <p>Using <code>getComputedStyle()</code>, you can get styles from a
+        pseudo-element in the same way as other elements, including
+        <code>::placeholder</code>, as demonstrated above. As of this writing,
+        this works correctly only in Firefox.</p>
+    </section>
+    <section>
+      <h2>Testing <code>getComputedStyle()</code> on non-existent
+        pseudo-elements</h2>
+
+      <div class="box3">
+        <p>Some example text.</p>
+      </div>
+
+      <p>Color for valid non-existent pseudo-element: <output></output></p>
+
+      <p>Color for non-valid pseudo-element: <output></output></p>
+
+      <p>In this example, I'm using <code>getComputedStyle()</code> to attempt
+        to get style information on a non-existent <code>::before</code>
+        pseudo-element, as well a a non-existent <code>::banana</code>
+        pseudo-element.</p>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

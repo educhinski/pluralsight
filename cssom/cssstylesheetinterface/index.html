@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Example showing usage of CSSStylesheet API">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>CSSStyleSheet Interface | CSSOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <h2>Working with <code>CSSStyleSheet</code> – Logging the Selector Text
+      </h2>
+
+      <p>The selector text for each style rule in the stylesheet is:<br></p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Changing the
+        Selector Text</h2>
+
+      <p>The selector text for each style rule in the stylesheet is:</p>
+
+      <p class="output"></p>
+
+      <p><button>Change Selector Text</button></p>
+
+      <p>The updated selector text is:</p>
+
+      <p class="output"></p>
+
+      <p>Use the CSS Panel to change the selector text for one or more
+        selectors. Then use the button above to update the selector text via the
+        <code>CSSStyleSheet</code> API. Your changes will be reflected in the
+        displayed result.</p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Accessing
+        <code>@media</code> Rules</h2>
+
+      <p>The selector text for each style rule inside of a media query is:</p>
+
+      <p class="output"></p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Accessing
+        <code>@media</code> Rules</h2>
+
+      <p>The <code>conditionText</code> text for each media query in the
+        stylesheet is:</p>
+
+      <p class="output"></p>
+
+      <p>Try adding another brand new media query in the CSS panel and it will
+        be reflected in the list above.</p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Accessing
+        <code>@keyframes</code> Rules</h2>
+
+      <p>The <code>keyText</code> value for each keyframes rule in the
+        stylesheet is:</p>
+
+      <p class="output"></p>
+
+      <p>Try adding another keyframes rule in the CSS panel and it will be
+        reflected in the list above.</p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Setting
+        <code>@keyframes</code> Rules</h2>
+
+      <p>The <code>keyText</code> value for each keyframes rule in the
+        stylesheet is:</p>
+
+      <p class="output"></p>
+
+      <p><button>Change the KeyText for the first Keyframe</button></p>
+
+      <p class="output"></p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Getting the name of
+        a <code>@keyframes</code> rule</h2>
+
+      <p>The <code>name</code> value for each keyframes rule in the stylesheet
+        is:</p>
+
+      <p class="output"></p>
+
+      <p>Try adding a new set of keyframes with a different name and it will be
+        reflected in the list above.</p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Accessing Property
+        Values inside <code>@keyframes</code> Rules</h2>
+
+      <p>These are the colors defined in each of the style rules inside my
+        keyframes:</p>
+
+      <p class="output"></p>
+
+      <p>Try changing the colors inside the keyframes in the CSS panel
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Inserting Rules</h2>
+
+      <p>In this example, I'm using the <code>insertRule()</code> method of the
+        <code>CSSStyleSheet</code> API to add a rule to the stylesheet.</p>
+
+      <p class="output">Number of rules in the stylesheet before: </p>
+
+      <p class="output">Number of rules in the stylesheet after: </p>
+    </section>
+    <section>
+      <h2>Working with the <code>CSSStyleSheet</code> API – Deleting Rules</h2>
+
+      <p>In this example, I'm using the <code>deleteRule()</code> method of the
+        <code>CSSStyleSheet</code> API to remove a rule from the stylesheet.</p>
+
+      <p class="output">Number of rules in the stylesheet before: </p>
+
+      <p class="output">Number of rules in the stylesheet after: </p>
+    </section>
+    <section>
+      <h2>Working with the <code>style</code> object of an individual style rule
+        in an external Stylesheet</h2>
+
+      <p>Below are the outputs from using various methods of the
+        <code>CSStyleDeclaration</code> API, exposed on a single style rule in
+        an external stylesheet. See the JS panel for details.</p>
+
+      <p class="output"></p>
+
+      <p>Try adjusting some of the styles in the CSS panel and the changes will
+        be reflected in the output above.</p>
+
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

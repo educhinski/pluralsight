@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Getting Computed Styles while using CSSOM.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Getting Computed Styles | CSSOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <h1>Getting Computed Styles - CSSOM APIs</h1>
+    <section>
+      <h2>The <code>getComputedStyle()</code> method can read any CSS property
+      </h2>
+
+      <p>The value for the <code>background</code> property is:
+        <output id="output-1"></output>
+      </p>
+
+      <p>The body's background color is set to "papayawhip" in the CSS. I can
+        read
+        this value (computed to <code>rgba()</code> notation) with JavaScript
+        using <code>window.getComputedStyle()</code>. In this case, I'm grabbing
+        the <code>background</code> property, which returns all of that
+        property's
+        shorthand values, even though only one was explicitly defined in the
+        CSS.
+      </p>
+    </section>
+
+    <section>
+      <h2><code>window.getComputedStyle()</code> returns all longhand values for
+        a shorthand property</h2>
+
+      <p id="p1"><output id="output-2"></output></p>
+
+      <p>Above I'm using JavaScript to grab the value of three longhand
+        properties on the first paragraph element on this page:
+        <code>background</code>, <code>animation</code>, and <code>flex</code>.
+        I haven't defined any of these in my CSS, but the return values
+        represent the initial state for all properties.</p>
+
+      <p>This demonstrates the kinds of values you should expect to get when
+        using <code>window.getComputedStyle()</code>.</p>
+    </section>
+
+    <section>
+      <h2><code>window.getComputedStyle()</code> returns width and height values
+        even if not defined in the CSS</h2>
+
+      <div class="parent">
+        <p>Parent element</p>
+        <div class="child">
+          <p>Child element</p>
+        </div>
+      </div>
+
+      <p><output id="output-3"></output></p>
+
+      <p><strong>Resize the parent element</strong>. The width of both elements
+        will be printed on the page on each resize. Neither the parent or child
+        element has a width or height defined in the CSS, but
+        <code>window.getComputedStyle()</code> will still return the actual
+        width or height of the element.</p>
+    </section>
+
+    <section>
+      <h2>Using <code>window.getComputedStyle()</code> along with
+        <code>getPropertyValue()</code></h2>
+
+      <div class="parent">
+        <p>Parent element</p>
+        <div class="child">
+          <p>Child element</p>
+        </div>
+      </div>
+
+      <p><output id="output-4"></output></p>
+
+      <p><strong>Resize the parent element</strong>. The width of both elements
+        will be printed on the page on each resize. Neither the parent or child
+        element has a width or height defined in the CSS, but
+        <code>window.getComputedStyle()</code> along with
+        <code>getPropertyValue()</code> will still return the actual width or
+        height of the element.</p>
+    </section>
+
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
